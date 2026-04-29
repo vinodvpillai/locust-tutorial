@@ -1,0 +1,24 @@
+# Virtual environment
+.venv/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# Lock files
+uv.lock
+
+# Locust output
+locust-stats.csv
+locust-stats_history.csv
+locust-exceptions.csv
+locust-failures.csv
+
+# IDE
+.vscode/
+.idea/
