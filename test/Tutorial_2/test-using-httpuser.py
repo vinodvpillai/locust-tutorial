@@ -25,11 +25,6 @@ class MyScript(HttpUser):
     def create_user(self):
         response = self.client.post(
             "/api/register",
-            data="""
-        {
-            "email": "test@gmail.com",
-            "password": "123456"
-        }
-        """,
+            json={"email": "eve.holt@reqres.in", "password": "pistol"},
         )
         print(response.json())
